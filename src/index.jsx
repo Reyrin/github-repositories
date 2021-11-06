@@ -1,11 +1,15 @@
 import React from "react";
 import { render } from "react-dom";
+import { Provider } from 'react-redux';
+import { store } from './reducers';
 
-import './styleScss.scss'
+import "./styleScss.scss";
 
-import App from './components/App';
+import App from "./components/App";
 
 render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );
