@@ -22,6 +22,25 @@ body {
   }
 }
 
+// Pages
+.pages {
+  margin: 20px 0;
+
+  .page,
+  .current-page {
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .current-page {
+    border: 2px solid red;
+    font-weight: 700;
+  }
+}
+
 // Preloader
 .lds-roller {
   display: inline-block;
