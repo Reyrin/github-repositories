@@ -16,7 +16,8 @@ module.exports = {
     extensions: ['.jsx', '.js', '.json', '.scss']
   },
   devServer: {
-    port: 3000
+    port: 3000,
+    historyApiFallback: true
   },
   devtool: 'source-map',
   plugins: [
