@@ -1,6 +1,35 @@
 .repo {
-  border: 2px solid #000;
-  padding: 10px 5px;
-  border-radius: 10px;
-  margin-bottom: 15px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #21262D;
+
+    color: #8b949e;
+    font-size: 12px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 10px;
+    }
+
+    &__name a {
+        color: #58a6ff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__last-commit {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        margin-bottom: 10px;
+        color: #8b949e;
+
+        &:hover {
+            color: #58a6ff;
+        }
+    }
 }

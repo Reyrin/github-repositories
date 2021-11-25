@@ -1,0 +1,88 @@
+.card {
+    padding: 50px 0;
+
+    &__repo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        display: block;
+        width: 300px;
+        height: 300px;
+        border: 5px solid #fff;
+    }
+
+    &__info {
+        max-width: 500px;
+        margin-left: 15px;
+    }
+
+    &__name {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #58a6ff;
+        margin-bottom: 5px;
+    }
+
+    &__owner-name {
+        font-size: 20px;
+        color: #a5cfff;
+        margin: 5px 0 10px;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: 28px;
+        color: #8b949e;
+
+        margin-bottom: 30px;
+    }
+
+    &__language {
+        margin-bottom: 30px;
+        color: #c1deff;
+
+        span {
+            color: #fff;
+        }
+    }
+
+    &__stars {
+        font-size: 20px;
+    }
+
+    &__contributors {}
+
+    &__contributors-title {
+        font-size: 25px;
+    }
+
+    &__contributors-list {
+        li {
+            margin: 10px 0;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        &__img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        &__repo {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
