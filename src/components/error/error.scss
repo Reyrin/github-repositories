@@ -1,0 +1,31 @@
+.Error {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 0;
+    color: #c9d1d9;
+    background-color: #30363d;
+    border: 1px solid #8b949e;
+    display: flex;
+    width: 500px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .Error {
+        width: 350px;
+    }
+}
+
+@media (max-width: 420px) {
+    .Error {
+        width: 250px;
+        line-height: 28px;
+    }
+}

@@ -3,7 +3,6 @@
 
     &__repo {
         display: flex;
-        justify-content: space-between;
     }
 
     &__img {
@@ -15,7 +14,7 @@
 
     &__info {
         max-width: 500px;
-        margin-left: 15px;
+        margin-left: 30px;
     }
 
     &__name {
@@ -83,6 +82,11 @@
         &__repo {
             flex-direction: column;
             align-items: center;
+        }
+
+        &__info {
+            max-width: 500px;
+            margin-left: 0;
         }
     }
 }

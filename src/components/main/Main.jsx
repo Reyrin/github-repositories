@@ -1,13 +1,14 @@
 import React from "react";
 import "./main.scss";
 
+import Repo from "./repo/Repo";
 import Search from './search/Search';
 import Spinner from './spinner/Spinner';
 import Pagination from './pagination/Pagination';
+import Error from './../error/Error';
 
 import { getRepos } from "./../actions/repos";
 import { useDispatch, useSelector } from "react-redux";
-import Repo from "./repo/Repo";
 import { setCurrentPage } from "../../reducers/reposReducer";
 
 const Main = () => {
@@ -16,6 +17,8 @@ const Main = () => {
     const isFetching = useSelector((state) => state.repos.isFetching);
     const currentPage = useSelector((state) => state.repos.currentPage);
     const perPage = useSelector((state) => state.repos.perPage);
+    const isFetchError = useSelector((state) => state.repos.isFetchError);
+
 
     const [text, setText] = React.useState("");
 
@@ -30,6 +33,7 @@ const Main = () => {
 
     return (
         <div>
+            {isFetchError && <Error />}
             <Search text={text} setText={setText} searchHandler={searchHandler}  />
 
             {isFetching ? (

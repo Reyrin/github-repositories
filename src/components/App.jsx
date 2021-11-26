@@ -10,6 +10,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/card/:username/:reponame" component={Card} />
+          <Route exact path="/error" component={Error} />
           <Redirect to="/" />
         </Switch>
       </div>
