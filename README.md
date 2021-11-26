@@ -1,8 +1,8 @@
 # ⭐ github-repositories
 
+![github-repositories](https://user-images.githubusercontent.com/51198976/143616622-91b17e3a-4bd3-48f2-b0d9-e10953da92cc.png)
 
-
-### Demo - https://reyrin.github.io
+### Demo - https://reyrin.github.io/github-repositories
 
 ## Stack:
 1. ReactJS
